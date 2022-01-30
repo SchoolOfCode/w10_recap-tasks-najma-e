@@ -1,0 +1,12 @@
+.paragraph {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 5px;
+}
+
+p {
+  text-align: left;
+  width: 730px;
+  display: flex;
+  align-content: center;
+}

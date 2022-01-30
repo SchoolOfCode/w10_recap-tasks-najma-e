@@ -1,0 +1,22 @@
+.post {
+  background-color: rgb(226, 210, 189);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  /* display: flex;
+  flex-direction: column; */
+  /*   margin-left: 80px;
+  margin-right: 80px; */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 70%;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  font-family: "Rosarivo", serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 27px;
+}

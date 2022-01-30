@@ -1,0 +1,16 @@
+.title {
+  text-align: center;
+  background-image: url();
+  /* text-shadow: 2px 2px white; */
+  background-color: wheat;
+  margin-top: 0%;
+  margin-bottom: 60px;
+  font-family: "Rosarivo", serif;
+  font-size: 24px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+body {
+  background-image: url(https://media.istockphoto.com/vectors/bird-dove-wallpaper-vector-id515825764?k=20&m=515825764&s=612x612&w=0&h=Uk9VABoooPMd6TBjjzVKOl1VZRSwNEMJnhjaan8yJbo=);
+}

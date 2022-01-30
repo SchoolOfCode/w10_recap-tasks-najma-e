@@ -1,9 +1,12 @@
 import Article from "../Article/Article";
+import css from "./App.module.css";
 
 function App() {
   return (
     <main className="App">
-      <h1>WikiPigeon</h1>
+      <>
+        <h1 className={css.title}>WikiPigeon</h1>
+      </>
       <Article />
     </main>
   );
