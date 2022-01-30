@@ -1,7 +1,18 @@
-import "./App.css";
-import articles from "../../libs/articles";
+import Article from "../Article/Article";
 
 function App() {
+  return (
+    <main className="App">
+      <h1>WikiPigeon</h1>
+      <Article />
+    </main>
+  );
+}
+
+export default App;
+
+/* function App() {
+  const [ArticleArray, setArticleArray] = useState(articles);
   return (
     <main className="App">
       <h1>WikiPigeon</h1>
@@ -28,6 +39,4 @@ function App() {
       })}
     </main>
   );
-}
-
-export default App;
+} */
