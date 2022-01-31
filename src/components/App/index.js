@@ -1,15 +1,28 @@
 import Article from "../Article/Article";
 import css from "./App.module.css";
+import LoginButton from "../LoginButton/LoginButton";
+import { useAuth0 } from "@auth0/auth0-react";
+import LogoutButton from "../LogoutButton/LogoutButton";
 
 function App() {
-  return (
-    <main className="App">
-      <>
-        <h1 className={css.title}>WikiPigeon</h1>
-      </>
-      <Article />
-    </main>
-  );
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  if (!isAuthenticated) {
+    return <LoginButton />;
+  }
+
+  if (isAuthenticated) {
+    return (
+      <main className="App">
+        <div className={css.navContainer}>
+          <h1 className={css.title}>WikiPigeon</h1>
+          <h2 className={css.greeting}>Welcome back {user.name}</h2>
+          <LogoutButton />
+        </div>
+        <Article />
+      </main>
+    );
+  }
 }
 
 export default App;
