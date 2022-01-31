@@ -5,7 +5,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import LogoutButton from "../LogoutButton/LogoutButton";
 
 function App() {
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
 
   if (!isAuthenticated) {
     return <LoginButton />;
